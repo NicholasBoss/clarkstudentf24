@@ -36,11 +36,18 @@ CREATE TABLE IF NOT EXISTS `church`.`unit` (
   `unit_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `unit_name` VARCHAR(45) NOT NULL,
   `unit_type_id` INT UNSIGNED NOT NULL,
+  `parent_unit_id` INT UNSIGNED NOT NULL,
   PRIMARY KEY (`unit_id`),
   INDEX `fk_unit_unit_type_idx` (`unit_type_id` ASC) VISIBLE,
+  INDEX `fk_unit_unit1_idx` (`parent_unit_id` ASC) VISIBLE,
   CONSTRAINT `fk_unit_unit_type`
     FOREIGN KEY (`unit_type_id`)
     REFERENCES `church`.`unit_type` (`unit_type_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_unit_unit1`
+    FOREIGN KEY (`parent_unit_id`)
+    REFERENCES `church`.`unit` (`unit_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -195,6 +202,31 @@ CREATE TABLE IF NOT EXISTS `church`.`calling` (
   CONSTRAINT `fk_calling_position1`
     FOREIGN KEY (`position_id`)
     REFERENCES `church`.`position` (`position_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `church`.`unit_organization`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `church`.`unit_organization` ;
+
+CREATE TABLE IF NOT EXISTS `church`.`unit_organization` (
+  `unit_organization_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `unit_id` INT UNSIGNED NOT NULL,
+  `organization_id` INT UNSIGNED NOT NULL,
+  PRIMARY KEY (`unit_organization_id`),
+  INDEX `fk_unit_organization_unit1_idx` (`unit_id` ASC) VISIBLE,
+  INDEX `fk_unit_organization_organization1_idx` (`organization_id` ASC) VISIBLE,
+  CONSTRAINT `fk_unit_organization_unit1`
+    FOREIGN KEY (`unit_id`)
+    REFERENCES `church`.`unit` (`unit_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_unit_organization_organization1`
+    FOREIGN KEY (`organization_id`)
+    REFERENCES `church`.`organization` (`organization_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;

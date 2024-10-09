@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `church`.`unit` (
   `unit_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `unit_name` VARCHAR(45) NOT NULL,
   `unit_type_id` INT UNSIGNED NOT NULL,
-  `parent_unit_id` INT UNSIGNED NOT NULL,
+  `parent_unit_id` INT UNSIGNED NULL,
   PRIMARY KEY (`unit_id`),
   INDEX `fk_unit_unit_type_idx` (`unit_type_id` ASC) VISIBLE,
   INDEX `fk_unit_unit1_idx` (`parent_unit_id` ASC) VISIBLE,

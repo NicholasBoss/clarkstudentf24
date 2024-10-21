@@ -22,9 +22,9 @@ VALUES
 , 1);
 
 INSERT INTO member -- Child Table of unit
-( first_name
-, last_name
-, dob
+( member_fname
+, member_lname
+, member_dob
 , unit_id)
 VALUES
 ( 'Jared'
@@ -91,7 +91,7 @@ VALUES
 , 2 );
 
 INSERT INTO ordinance -- Parent Table
-(ordinance_name)
+(ordinance_type)
 VALUES
 ('Baby Blessing'),
 ('Baptism'),

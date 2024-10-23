@@ -72,7 +72,7 @@ DROP TABLE IF EXISTS `film`.`actor` ;
 CREATE TABLE IF NOT EXISTS `film`.`actor` (
   `actor_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `actor_fname` VARCHAR(45) NOT NULL,
-  `actor_lname` VARCHAR(45) NOT NULL,
+  `actor_lname` VARCHAR(45) NULL,
   PRIMARY KEY (`actor_id`))
 ENGINE = InnoDB;
 

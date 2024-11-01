@@ -19,15 +19,17 @@ USE v_art;
 -- +--------------+-------------+----------+------+------+---------------+-------+
 -- | fname        | mname       | lname    | dob  | dod  | country       | local |
 -- +--------------+-------------+----------+------+------+---------------+-------+
--- | Vincent      | NULL        | van Gogh | 1853 | 1890 | France        | n     |
--- | Rembrandt    | Harmenszoon | van Rijn | 1606 | 1669 | Netherlands   | n     |
--- | Leonardo     | NULL        | da Vinci | 1452 | 1519 | Italy         | n     |
 -- | Venture      | Lonzo       | Coy      | 1965 | NULL | United States | y     |
+-- | Leonardo     | NULL        | da Vinci | 1452 | 1519 | Italy         | n     |
 -- | Deborah      | NULL        | Gill     | 1970 | NULL | United States | y     |
+-- | Gustav       | NULL        | Klimt    | 1862 | 1917 | Italy         | n     |
 -- | Claude       | NULL        | Monet    | 1840 | 1926 | France        | n     |
 -- | Pablo        | NULL        | Picasso  | 1904 | 1973 | Spain         | n     |
 -- | Michelangelo | di Lodovico | Simoni   | 1475 | 1564 | Italy         | n     |
+-- | Vincent      | NULL        | van Gogh | 1853 | 1890 | France        | n     |
+-- | Rembrandt    | Harmenszoon | van Rijn | 1606 | 1669 | Netherlands   | n     |
 -- +--------------+-------------+----------+------+------+---------------+-------+
+
 -- ------------------------------------------------------------------------------------
 
 

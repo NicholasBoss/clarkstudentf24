@@ -38,7 +38,7 @@ USE v_art;
 --    She finds out that he died in 1918 not 1917. 
 --    The manager changes the 'Date of Death' (dod) value to be 1918 and clicks 'Apply'
 --    Write the SQL statement that will run in the background to accomplish this edit. 
---   (The UPDATE should include a WHERE clause!)
+--   (The update should include a WHERE clause!)
 -- ------------------------------------------------------------------------------------
 
 

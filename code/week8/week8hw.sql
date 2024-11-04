@@ -41,5 +41,6 @@ USE bike;
 --    and divide the remaining balance into 10 equal payments. 
 --    Display all monetary values with a dollar sign, 
 --    comma at the thousands place and two decimal places. 
---    Adjust the column headings to appear as the screenshot shows.
+--    Adjust the column headings to appear as follows:
+--   | Product Name | Price | 5% Down Payment | 10 Equal Payments |
 -- -------------------------------------------------------------------------------------------

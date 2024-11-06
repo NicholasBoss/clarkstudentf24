@@ -27,6 +27,7 @@
     RIGHT()
     LEFT()
     LOCATE()
+    SUBSTRING()
     SUBSTRING_INDEX()
     UPPER()
     LOWER()

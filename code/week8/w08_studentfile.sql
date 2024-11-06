@@ -44,7 +44,8 @@
 
 -- 3. If we used store_id instead of the store_name, 
 --    it would become a part of the string and would not be an integer any more.
-
+SELECT CONCAT('The store id is ', store_id, ' and the email is ', email) + 1 AS 'Store Id'
+FROM store;
 -- 4. Show me only the first 15 characters for all the product names (Hint: try RIGHT)
 
 -- 5. Show me only the last 10 characters for all the product names

@@ -3,15 +3,15 @@
 -- *********************************
 
 /*
-     SELECT     column_name AS 'Alias1'
-     ,          Function(column_name_2) AS 'Alias2'
-     FROM       table1 t1   -- t1 and t2 are table aliases
-     JOIN       table2 t2   -- join types: INNER, LEFT, RIGHT
-     ON         t1.table1_id = t2.table1_id -- PK and FK might not always be the same name
-     WHERE      column_name = condition
-     ORDER BY   column_name (DESC)
-     LIMIT      # of rows;
-     To remember this: Stay Firm (JOINED) With Our Lord
+    SELECT     column_name AS 'Alias1'
+    ,          Function(column_name_2) AS 'Alias2'
+    FROM       table1 t1   -- t1 and t2 are table aliases
+    JOIN       table2 t2   -- join types: INNER, LEFT, RIGHT
+    ON         t1.table1_id = t2.table1_id -- PK and FK might not always be the same name
+    WHERE      column_name = condition
+    ORDER BY   column_name (DESC)
+    LIMIT      # of rows;
+    To remember this: Stay Firm (JOINED) With Our Lord
 */
 
 -- **************************

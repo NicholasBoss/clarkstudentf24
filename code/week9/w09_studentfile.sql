@@ -67,7 +67,8 @@ ON         a.artist_id = aw.artist_id;
 
 -- 2. Show all cities in the continent of Asia. This one targets city names
 
--- 3. Show all languages in country of Egypt. Note: You do not need the alias on Name this time but it is good to do so.
+-- 3. Show all languages in country of Egypt. 
+-- Note: You do not need the alias on Name this time but it is good to do so.
 
 -- 4. Show the country and city populations and country and city names in the continents 
 --    in the western hemisphere (HINT: Use continent)
@@ -159,7 +160,8 @@ FROM magazine m
 
 -- Use v_art
 USE v_art;
--- Common Error: missing the table alias. Throws an Unknown column error. Add the alias 'aw' after artwork
+-- Common Error: missing the table alias. Throws an Unknown column error. 
+-- Add the alias 'aw' after artwork
 -- Show all titles with their period and keyword.
 SELECT     title
 ,          period
@@ -180,7 +182,8 @@ ON         artwork_id = awk.artwork_id
 INNER JOIN keyword k
 ON         awk.keyword_id = k.keyword_id;
 
--- Common Error: Query runs but no results are found. Most likely, you are trying to use a string column in the ON clause.
+-- Common Error: Query runs but no results are found. 
+-- Most likely, you are trying to use a string column in the ON clause.
 USE magazine;
 SELECT    magazineName
 ,         subscriberFirstName

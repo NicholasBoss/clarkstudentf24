@@ -137,7 +137,7 @@ ON         a.artist_id = aw.artist_id;
 --  FULL `OUTER` JOIN (DEMO)
 -- **************************
 
--- FULL OUTER JOIN can only be simulated with a UNION in MySQL
+-- FULL OUTER JOIN can only be simulated with a UNION in MySQL (Should not be used in this class)
 -- Copy the LEFT OUTER JOIN above and UNION it to Same with the RIGHT JOINS
 SELECT magazineName, magazinePrice, subscriptionStartDate, subscriberLastName
 FROM magazine m 
